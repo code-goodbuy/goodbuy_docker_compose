@@ -27,7 +27,7 @@ services:
     volumes:
       - /var/log:/usr/src/app/log
     ports:
-      - "80:8080"
+      - "8080:8080"
     command: "node dist/server.js"
     depends_on:
         - nginx
